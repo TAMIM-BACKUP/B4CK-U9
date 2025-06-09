@@ -8,11 +8,11 @@ module.exports = {
     author: 'Kshitiz & Mr Bayzid',
     countDown: 5,
     role: 0,
-    shortDescription: 'auto video downloader',
-    longDescription: '',
+    shortDescription: 'Auto download video/audio from link',
+    longDescription: 'Automatically detects and downloads videos from TikTok, YouTube, Facebook, Instagram links.',
     category: '𝗠𝗘𝗗𝗜𝗔',
     guide: {
-      en: '{p}{n}',
+      en: '{p}{n}'
     }
   },
 
@@ -22,15 +22,17 @@ module.exports = {
     const linkCheck = this.checkLink(event.body);
     if (linkCheck) {
       const { type, url } = linkCheck;
+      console.log("✅ Detected media link:", url);
       this.downLoad(url, type, api, event);
     }
   },
 
   downLoad: function (url, type, api, event) {
     const time = Date.now();
-    const path = __dirname + `/cache/${time}.${type}`;
+    const path = `${__dirname}/cache/${time}.${type}`;
 
     this.getLink(url).then(res => {
+      console.log("✅ Media URL fetched:", res);
       const downloadUrl = res;
 
       axios({
@@ -39,10 +41,15 @@ module.exports = {
         responseType: "arraybuffer"
       }).then(res => {
         fs.writeFileSync(path, Buffer.from(res.data));
+        if (!fs.existsSync(path) || fs.statSync(path).size === 0) {
+          return api.sendMessage("❌ Download failed or empty file.", event.threadID, event.messageID);
+        }
 
         const fileSizeMB = fs.statSync(path).size / 1024 / 1024;
+        console.log(`✅ Downloaded file size: ${fileSizeMB.toFixed(2)} MB`);
+
         if (fileSizeMB > 25) {
-          return api.sendMessage("❌ The file is too large to send (over 25MB)", event.threadID, () => fs.unlinkSync(path), event.messageID);
+          return api.sendMessage("❌ File too large to send (over 25MB)", event.threadID, () => fs.unlinkSync(path), event.messageID);
         }
 
         api.sendMessage({
@@ -51,12 +58,12 @@ module.exports = {
         }, event.threadID, () => fs.unlinkSync(path), event.messageID);
 
       }).catch(err => {
-        console.error(err);
-        api.sendMessage("❌ Failed to download the file.", event.threadID, event.messageID);
+        console.error("❌ Download failed:", err);
+        api.sendMessage("❌ Failed to download media file.", event.threadID, event.messageID);
       });
     }).catch(err => {
-      console.error(err);
-      api.sendMessage("❌ Failed to fetch the download link.", event.threadID, event.messageID);
+      console.error("❌ Could not fetch media URL:", err);
+      api.sendMessage("❌ Failed to fetch media download link.", event.threadID, event.messageID);
     });
   },
 
@@ -74,12 +81,12 @@ module.exports = {
       return axios.get(`https://api.nayan-project.repl.co/nayan/yt?url=${url}`)
         .then(res => res.data.links[1].url);
     } else {
-      return Promise.reject("Invalid or unsupported URL.");
+      return Promise.reject("❌ Unsupported or invalid URL.");
     }
   },
 
   checkLink: function (message) {
-    const urlRegex = /(http(s)?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}([-a-zA-Z0-9@:%_+.~#?&//=]*)/g;
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
     const found = message.match(urlRegex);
     const media = ['tiktok', 'facebook', 'douyin', 'youtube', 'youtu', 'twitter', 'instagram', 'kuaishou', 'fb'];
 

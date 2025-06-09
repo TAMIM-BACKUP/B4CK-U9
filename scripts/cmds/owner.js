@@ -16,12 +16,12 @@ config: {
   onStart: async function ({ api, event }) {
   try {
     const ownerInfo = {
-      name: '𝐍𝐈𝐑𝐎𝐁',
+      name: 'SAIFUL ISLAM',
       gender: 'MaLe',
-      age: '18+',
-      height: '𝐉𝐀𝐍𝐈 𝐍𝐀',
+      age: '20+',
+      height: '6.1',
       choise: '',
-      nick: '😒'
+      nick: 'SIFU'
     };
 
     const bold = 'https://files.catbox.moe/a86iqb.mp4'; // Replace with your Google Drive videoid link https://drive.google.com/uc?export=download&id=here put your video id
@@ -38,7 +38,7 @@ config: {
     fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
 
     const response = ` 
-╭[ .  ]•〆 NIROB 〆 ]  ─⦿
+╭[ .  ]•〆 SAIF 〆 ]  ─⦿
 ╭────────────◊
 ├‣ 𝐁𝐨𝐭 & 𝐎𝐰𝐧𝐞𝐫 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 
 ├‣ 𝐍𝐚𝐦𝐞: ${ownerInfo.name}

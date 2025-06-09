@@ -1,10 +1,10 @@
-# Ewr-ShAn-Bot
+# SAIF-BOT
 
 ## Original Source Code
 - **GitHub Repository:** [https://github.com/ntkhang03/Goat-Bot-V2](https://github.com/ntkhang03/Goat-Bot-V2)
 
 ## Project Updates
-This version includes fixes by Ew'r ShAn's to the FCA (Facebook Chat API) implementation.
+This version includes fixes by SAIFUL ISLAM  to the FCA (Facebook Chat API) implementation.
 
 ### Key Modifications
 - Updated files:
@@ -27,9 +27,9 @@ A custom Facebook API has been used to fix and improve the bot's functionality.
 
 ## Troubleshooting
 For any issues or support:
-- **Telegram:** [Telegram](https://telegram.me/si_rana252)
-- **Facebook:** [Facebook](https://www.facebook.com/sirana252)
-- **Instagram:** [Instagram](https://www.instagram.com/sirana252)
+- **Telegram:** [Telegram](https://telegram.me/@S41FUL0)
+- **Facebook:** [Facebook](https://www.facebook.com/61570000466312)
+- **Instagram:** [Instagram](https://www.instagram.com/)
 
 ## Additional Resources
 - **C3C Files Download:** [Download Here](https://drive.google.com/file/d/1-MWoTyqES-V4H-QAIQDiC34-XMKju8hA/view?usp=drivesdk)
@@ -44,7 +44,7 @@ For any issues or support:
 - If you facing problem with npm than update you `package.json` and `package-lock.json` from this repo and use node version 20 with npm version 10
 
 ## Disclaimer
-This is a modified version of the original Ewr-ShAn-Bot. Use at your own discretion.
+This is a modified version of the original SAIF-BOT. Use at your own discretion.
 
 ## Support
 For any technical support or inquiries, please contact the maintainer through the provided social media links.

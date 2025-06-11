@@ -3,18 +3,26 @@ module.exports = {
     name: "chicken",
     version: "1.0",
     author: "SAIF",
-    countDown: 1,
+    countDown: 0,
     role: 0,
-    shortDescription: "🐤 trigger",
-    longDescription: "Triggers a funny chicken message when someone types 🐤",
+    shortDescription: {
+      en: "Responds to 🐤"
+    },
+    longDescription: {
+      en: "Sends a reply when 🐤 is sent"
+    },
     category: "fun",
-    guide: "Just type 🐤 without any prefix"
+    guide: {
+      en: "Just send 🐤"
+    }
   },
 
-  onChat: async function ({ event, message }) {
-    const content = event.body.toLowerCase();
-    if (content === "🐤") {
-      return message.reply("মুরগির বাচ্চাটারে ধর 🐥");
+  onStart: async function () {},
+
+  onChat: async function ({ message, event }) {
+    const content = event.body;
+    if (content && content.includes("🐤")) {
+      return message.reply("মুরগির বাচ্চাটারে ধর 🐤");
     }
   }
 };

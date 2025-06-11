@@ -2,7 +2,7 @@ module.exports = {
   config: {
     name: "autoreact",
     version: "1.0",
-    author: "YourName",
+    author: "SAIF",
     countDown: 0,
     role: 0,
     shortDescription: "React automatically to every message",

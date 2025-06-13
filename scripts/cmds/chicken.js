@@ -6,14 +6,14 @@ module.exports = {
     countDown: 0,
     role: 0,
     shortDescription: {
-      en: "Responds to 🐤"
+      en: "Responds to 🐤,🐥"
     },
     longDescription: {
-      en: "Sends a reply when 🐤 is sent"
+      en: "Sends a reply when 🐤,🐥 is sent"
     },
     category: "fun",
     guide: {
-      en: "Just send 🐤"
+      en: "Just send 🐤,🐥"
     }
   },
 
@@ -21,8 +21,8 @@ module.exports = {
 
   onChat: async function ({ message, event }) {
     const content = event.body;
-    if (content && content.includes("🐤")) {
-      return message.reply("মুরগির বাচ্চাটারে ধর 🐤");
+    if (content && content.includes("🐤,🐥")) {
+      return message.reply("শাহিন মুরগির বাচ্চাটাকে ধরে ফেল 🐤");
     }
   }
 };

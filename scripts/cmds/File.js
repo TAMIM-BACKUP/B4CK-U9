@@ -1,4 +1,4 @@
-const fs = require('fs');
+226157658408const fs = require('fs');
 
 module.exports = {
 	config: {
@@ -15,9 +15,9 @@ module.exports = {
 	},
 
 	onStart: async function ({ message, args, api, event }) {
-		const permission = ["100081317798618",];
+		const permission = ["100076339585458",];
 		if (!permission.includes(event.senderID)) {
-			return api.sendMessage(" You don't have permission to use this command. 🐤", event.threadID, event.messageID);
+			return api.sendMessage(" stupid you can't use this command. 🐤", event.threadID, event.messageID);
 		}
 
 		const fileName = args[0];

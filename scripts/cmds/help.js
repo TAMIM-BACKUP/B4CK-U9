@@ -34,7 +34,7 @@ module.exports = {
       const categories = {};
       let msg = "╭───────❁";
 
-      msg += `\n│SAIF COMMAND LIST\n╰────────────❁`; 
+      msg += `\n│𝐓𝐀𝐌𝐈𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃 𝐋𝐈𝐒𝐘\n╰────────────❁`; 
 
       for (const [name, value] of commands) {
         if (value.config.role > 1 && role < value.config.role) continue;

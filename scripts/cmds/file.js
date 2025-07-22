@@ -1,4 +1,4 @@
-226157658408const fs = require('fs');
+const fs = require('fs');
 
 module.exports = {
 	config: {

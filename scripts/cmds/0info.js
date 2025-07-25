@@ -17,8 +17,8 @@ module.exports = {
 	onStart: async function ({ message }) {
 		const authorName = " ღ⸙𝐓𝐀𝐌𝐈𝐌ღ⸙ ";
 		const ownAge = "『 ⸙__17+__⸙ 』";
-		const messenger = "https://m.me/𝙗𝙧𝙖𝙣𝙙.𝙩𝙖𝙢𝙞𝙢.69";
-		const authorFB = "https://www.facebook.com/brand.tamim69";
+		const messenger = "https://m.me/𝐢𝐭𝐬.𝐱.𝐭𝐚𝐦𝐢𝐦";
+		const authorFB = "https://www.facebook.com/its.x.tamim";
 		const authorNumber = "_0189*****𝙚𝙧𝙧𝙤𝙧";
 		const Status = "ღ__𝙋𝙐𝙍𝘼𝙄 𝙎𝙄𝙉𝙂𝙇𝙀 __ღ";
 		const urls = [

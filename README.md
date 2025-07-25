@@ -1,4 +1,4 @@
-# SAIF-BOT
+# 𓆩𝑻𝑨𝑴𝑰𝑴_𝑩𝑶𝑻𓆪
 
 ## Original Source Code
 - **GitHub Repository:** [https://github.com/ntkhang03/Goat-Bot-V2](https://github.com/ntkhang03/Goat-Bot-V2)
@@ -27,9 +27,9 @@ A custom Facebook API has been used to fix and improve the bot's functionality.
 
 ## Troubleshooting
 For any issues or support:
-- **Telegram:** [Telegram](https://telegram.me/@S41FUL0)
-- **Facebook:** [Facebook](https://www.facebook.com/61570000466312)
-- **Instagram:** [Instagram](https://www.instagram.com/)
+- **Telegram:** [Telegram](https://telegram.me/@IMTAMIMOK69)
+- **Facebook:** [Facebook](https://www.facebook.com/its.x.tamim)
+- **Instagram:** [Instagram](https://www.instagram.com/tamim_4047)
 
 ## Additional Resources
 - **C3C Files Download:** [Download Here](https://drive.google.com/file/d/1-MWoTyqES-V4H-QAIQDiC34-XMKju8hA/view?usp=drivesdk)

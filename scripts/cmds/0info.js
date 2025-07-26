@@ -17,18 +17,18 @@ module.exports = {
 	onStart: async function ({ message }) {
 		const authorName = " ღ⸙𝐓𝐀𝐌𝐈𝐌ღ⸙ ";
 		const ownAge = "『 ⸙__17+__⸙ 』";
-		const messenger = "https://m.me/𝐢𝐭𝐬.𝐱.𝐭𝐚𝐦𝐢𝐦";
+		const messenger = "https://m.me/its.x.tamim";
 		const authorFB = "https://www.facebook.com/its.x.tamim";
 		const authorNumber = "_0189*****𝙚𝙧𝙧𝙤𝙧";
 		const Status = "ღ__𝙋𝙐𝙍𝘼𝙄 𝙎𝙄𝙉𝙂𝙇𝙀 __ღ";
 		const urls = [
-"https://i.imgur.com/7zHxy05.mp4",
-"https://i.imgur.com/7zHxy05.mp4",
-"https://i.imgur.com/7zHxy05.mp4",
-"https://i.imgur.com/7zHxy05.mp4"
+"https://files.catbox.moe/0gfdrm.mp4",
+"https://files.catbox.moe/0gfdrm.mp4",
+"https://files.catbox.moe/0gfdrm.mp4",
+"https://files.catbox.moe/0gfdrm.mp4"
 ];
 		const link = urls[Math.floor(Math.random() * urls.length)];
-		const now = moment().tz('Asia/Jakarta');
+		const now = moment().tz('Asia/Dhaka');
 		const date = now.format('MMMM Do YYYY');
 		const time = now.format('h:mm:ss A');
 		const uptime = process.uptime();
@@ -51,8 +51,8 @@ module.exports = {
 \⏰彡𝑁𝑜𝑤 𝑇𝑖𝑚𝑒 : ${time}
 \🔰彡𝐴𝑛𝑦 𝐻𝑒𝑙𝑝 𝐶𝑜𝑛𝑡𝑎𝑐𝑡 :⩸__${messenger}__⩸
 \📛彡𝐵𝑜𝑡 𝐼𝑠 𝑅𝑢𝑛𝑛𝑖𝑛𝑔 𝐹𝑜𝑟 : ${uptimeString}
-    𝑻𝒈: https://t.me/IMTAMIMOK69
-    𝑰𝒏𝒔𝒕𝒂: https://www.instagram.com/tamim_4203
+    𝑻𝒈: https://t.me/@IMTAMIMOK69
+    𝑰𝒏𝒔𝒕𝒂: https://www.instagram.com/tamim__4047
     𝑪𝒂𝒑𝑪𝒖𝒕: 𝐬𝐨𝐫𝐫𝐲>³
     𝑻𝒊𝒌𝑻𝒐𝒌: 𝐭𝐢𝐤𝐭𝐨𝐤 𝐦𝐚𝐫𝐚𝐲 𝐧𝐚
     𝒀𝒐𝒖𝑻𝒖𝒃𝒆: 𝐰𝐚𝐢𝐭⚠
